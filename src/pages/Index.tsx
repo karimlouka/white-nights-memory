@@ -1,16 +1,17 @@
+import HeroSection from "@/components/HeroSection";
+import QuoteSection from "@/components/QuoteSection";
+import GallerySection from "@/components/GallerySection";
+import FooterSection from "@/components/FooterSection";
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+const Index = () => {
+  return (
+    <main className="min-h-screen bg-background overflow-x-hidden">
+      <HeroSection />
+      <QuoteSection />
+      <GallerySection />
+      <FooterSection />
+    </main>
+  );
+};
 
-const rootElement = document.getElementById('root');
-if (!rootElement) {
-  throw new Error("Could not find root element to mount to");
-}
-
-const root = ReactDOM.createRoot(rootElement);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+export default Index;
