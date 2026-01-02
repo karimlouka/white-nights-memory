@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { Play, Pause, Music } from "lucide-react";
+import { Play, Pause } from "lucide-react";
 import { motion } from "framer-motion";
 import songFile from "@/assets/song.mp3";
 
@@ -69,10 +69,6 @@ const MusicPlayer = () => {
           className="max-w-2xl mx-auto"
         >
           <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-8 border border-border/50 shadow-xl">
-            <div className="flex items-center justify-center gap-4 mb-6">
-              <Music className="w-6 h-6 text-primary" />
-              <h3 className="font-display text-xl text-foreground">موسيقى الليالي البيضاء</h3>
-            </div>
             
             <div className="flex flex-col items-center gap-6">
               {/* Play Button */}
